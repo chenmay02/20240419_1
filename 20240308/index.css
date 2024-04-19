@@ -1,0 +1,75 @@
+*{ 
+    /*border: solid 2px black;*/ /*實心的線條，大小為2PX*/
+    font-family:微軟正黑體;
+    font-size: 20px;
+ } 
+
+    html,body{
+        width: 100%;
+        height: 100%;
+        background-color: #222;
+        margin: 0px;
+        /*產生置中的三條指令*/
+        display: flex;
+        /*左右置中*/
+        justify-content: center;
+        /*上下置中*/
+        align-items: center;
+    }
+    .card{
+        width: 800pX;
+        display: flex; 
+        /*設定在card以下的div都在同一個線上*/
+        background-color: #fff;
+        border: solid 2px black;
+        /*產生一個圓弧*/
+        border-radius: 30px;
+        overflow: hidden; /*超出去就隱藏起來*/
+
+     }
+    .left{
+        width: 30%;
+        background-image: /*加入圖片*/
+        url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Roasted_coffee_beans.jpg/1280px-Roasted_coffee_beans.jpg);
+    }
+    .right{
+        width: 70%;
+    }
+    ul li{
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+    }
+    h1{ /*針對h1 tag格式處理，所以會蓋掉前面的*設定格式*/
+        font-size:  50px;
+        /*color: white; */
+        /*background-color: red;*/
+        margin: 20px;
+        /*padding: 20px;*/
+    }
+    p{
+        margin: 20px;
+        line-height: 30px;
+    }
+    h2{
+        margin: 20px
+    }
+    .smalltext{
+        font-size: 15px;
+        margin-left: 10px;
+        color: #999;
+        /*h1本身就是粗體字，normal為非粗體字*/
+        font-weight: normal;
+        /*字貼到底部，文字上下對齊*/
+        vertical-align: bottom;
+    }
+    ul li h3{
+        background-color: #5a3226;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        /*文字左右置中*/
+        text-align: center;
+         /*字貼到底部，文字上下對齊*/
+        vertical-align: bottom;
+        }
